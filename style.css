@@ -1,0 +1,106 @@
+/*
+   Reset default browser spacing so everything starts at zero.
+   The * selector applies this to every element on the page.
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+   Targets all <ul> elements.
+   Removes bullets and sets the background for the main navigation bar.
+*/
+ul {
+    list-style: none;
+    background-color: rgb(41, 150, 252);
+}
+
+/*
+   Targets every <li> (list item) inside a <ul>.
+   display: inline-block -> puts list items next to each other horizontally.
+   position: relative -> allows child elements (like dropdowns)
+   to be absolutely positioned relative to this <li>.
+*/
+ul li {
+    display: inline-block;
+    position: relative; /* needed for dropdown positioning */
+}
+
+/*
+   Targets every <a> that’s inside an <li>.
+   So: “ul li a” = for every link inside a list item inside a list.
+   This styles the top-level navbar links (“Explore”, etc.).
+*/
+ul li a {
+    display: block;             /* makes the whole area clickable */
+    padding: 20px 25px;         /* space around the text */
+    color: aliceblue;           /* text color */
+    text-decoration: none;      /* removes underline */
+    text-align: center;         /* centers text inside the box */
+    font-size: 20px;            /* larger text for main nav */
+}
+
+/*
+   Changes the background color when the user hovers over a link.
+   “ul li a:hover” means any <a> inside <li> inside <ul> that’s hovered.
+*/
+ul li a:hover {
+    background: rgb(155, 207, 255);
+}
+
+/*
+   Dropdown menu styling.
+   Selector “ul li ul.dropdown” means:
+   - <ul> (the main nav)
+     contains <li> (a menu item)
+       which contains another <ul> with class="dropdown" (the hidden submenu).
+   This styles that inner dropdown menu.
+*/
+ul li ul.dropdown {
+    position: absolute;          /* floats the dropdown below its parent */
+    top: 100%;                   /* places it just below the parent item */
+    left: 0;                     /* aligns left edges */
+    background: rgb(41, 150, 252);
+    display: none;               /* hidden until hovered */
+    min-width: 113.75px;            /* sets dropdown width */
+    padding: 0;
+    z-index: 999;                /* keeps it above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+}
+
+/*
+   “ul li ul.dropdown li” means:
+   - go inside the dropdown <ul> (class="dropdown")
+   - select each <li> inside it
+   Makes the dropdown items display vertically (block-level).
+*/
+ul li ul.dropdown li {
+    display: block;
+}
+
+/*
+   “ul li ul.dropdown li a” means:
+   - inside a <ul> (the main nav)
+     find an <li>
+       inside that, find <ul class="dropdown">
+         inside that, find <li>
+           and finally select the <a> link inside it.
+   Basically: “the links inside dropdown items”.
+   This styles each clickable link in the dropdown list.
+*/
+ul li ul.dropdown li a {
+    padding: 12px 18px;  /* smaller padding to make dropdown compact */
+    font-size: 16px;     /* slightly smaller text than top-level menu */
+}
+
+/*
+   “ul li:hover ul.dropdown” means:
+   - when you hover over a list item (<li>)
+     that contains a nested <ul class="dropdown">,
+     show (display: block) the dropdown.
+   This is what makes the dropdown appear when hovering over “Explore”.
+*/
+ul li:hover ul.dropdown {
+    display: block;
+}
