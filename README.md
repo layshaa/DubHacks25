@@ -1,3 +1,4 @@
 # Hello
+<<<<<<< HEAD
 Platypus
 Hola
