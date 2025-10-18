@@ -28,7 +28,7 @@ ul li {
 }
 
 /*
-   Targets every <a> that’s inside an <li>.
+   Targets every <a> (anchor/link) that’s inside an <li>.
    So: “ul li a” = for every link inside a list item inside a list.
    This styles the top-level navbar links (“Explore”, etc.).
 */
@@ -104,3 +104,24 @@ ul li ul.dropdown li a {
 ul li:hover ul.dropdown {
     display: block;
 }
+
+#greeting img {
+    height: 250px;
+    width: 250px;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column; /* stack image above text */
+    align-items: center;    /* center items horizontally */
+    width: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
