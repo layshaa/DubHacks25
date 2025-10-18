@@ -1,2 +1,4 @@
 # Hello
+<<<<<<< HEAD
 Platypus
+Hola
