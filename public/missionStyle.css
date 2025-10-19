@@ -16,6 +16,9 @@
 #LHS ul {
     list-style: none;
     background-color: #29838E;
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 600;
+    font-style: normal;
 }
 
 /*
@@ -45,7 +48,7 @@
    Changes the background color when the user hovers over a navigation link.
 */
 #LHS ul li a:hover {
-    background: #349fad;
+    background: rgb(52, 159, 173);
 }
 
 /*
@@ -85,11 +88,15 @@
     display: block;
 }
 
-footer {
-    background: #29838E;
+footer p{
+    background-color: #9edfe8;;
     text-align: center;
     padding: 20px;
     margin-top: 60px;
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    color: #184a51;
 }
 
 html, body {
@@ -112,25 +119,24 @@ main {
 }
 
 h1,h2 {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 1000;
+  font-family: "Rubik Puddles", system-ui;
+  font-weight: 400;
   font-style: normal;
+  font-size: 75px;
   color: white;
-  font-size: 36px;
   text-align: center;
   margin-bottom: 20px;
 }
 
 p {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: white;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
 #missionStatement {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(52, 159, 173, 0.5);
   border-radius: 20px;
   width: 1200px;
   padding: 30px;

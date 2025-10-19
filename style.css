@@ -13,23 +13,6 @@
    Targets the navigation ul specifically using the parent div id.
    Sets the background for the main navigation bar.
 */
-#LHS ul {
-    list-style: none;
-    background-color: #29838E;
-    font-family: "Rubik Puddles", system-ui;
-    font-weight: 600;
-    font-style: normal;
-}
-
-h1 {
-  font-family: "Rubik Puddles", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100px;
-  color: #184a51;
-}
-
-
 .logo {
   transition: transform 0.3s ease; /* Smooth animation */
 }
@@ -46,14 +29,17 @@ h1 {
   transform: scale(1.2); /* Enlarge to 120% */
 }
 
-h2, button {
-    font-family: "Cherry Bomb One", system-ui;
-    font-weight: 400;
-    font-style: normal;
+#LHS ul {
+    list-style: none;
+    background-color: #29838E;
 }
 
-h2 {
-    color: #184a51;
+h1 {
+  font-family: "Rubik Puddles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  color: #1a535a;
 }
 
 /*
@@ -183,13 +169,9 @@ body {
     min-height: 300px;
     resize: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
     width: 650px;
     border-radius: 5px;
-
-    font-family: "Cherry Bomb One", system-ui;
-    font-weight: 400;
-    font-style: normal;
 }
 
 button {
@@ -203,7 +185,7 @@ button {
 }
 
 button:hover {
-    background-color:  #349fad;
+    background-color:  #9edfe8;
 }
 
 textarea {
@@ -219,8 +201,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 60px;
-    font-family: "Rubik Puddles", system-ui;
-    font-weight: 600;
-    font-style: normal;
-    color: #184a51;
 }
