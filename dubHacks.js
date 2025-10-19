@@ -3,7 +3,7 @@
 
 
 // This is for the response page -- looking to see if it outputs our response
-document.getElementById("UserInputForm").addEventListener("submit", function(event) {
+document.getElementById("userInputForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevents a default form submission
 
     // grab what is put in by user
