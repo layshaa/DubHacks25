@@ -15,7 +15,7 @@
 */
 #LHS ul {
     list-style: none;
-    background-color: rgb(41, 150, 252);
+    background-color: #29838E;
 }
 
 /*
@@ -45,7 +45,7 @@
    Changes the background color when the user hovers over a navigation link.
 */
 #LHS ul li a:hover {
-    background: rgb(155, 207, 255);
+    background: #349fad;
 }
 
 /*
@@ -55,7 +55,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: rgb(41, 150, 252);
+    background: #29838E;
     display: none;
     min-width: 113.75px;
     padding: 0;
@@ -116,6 +116,10 @@ main {
     padding-bottom: 40px;
 }
 
+body {
+    background-color: #9edfe8;
+}
+
 #greeting img {
     height: 250px;
     width: 250px;
@@ -149,7 +153,7 @@ main {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: rgb(41, 150, 252);
+    background-color: #29838E;
     color: white;
     border: none;
     border-radius: 5px;
@@ -157,11 +161,15 @@ button {
 }
 
 button:hover {
-    background-color: rgb(155, 207, 255);
+    background-color:  #9edfe8;
+}
+
+textarea {
+    
 }
 
 footer {
-    background: rgb(41, 150, 252);
+    background-color: #9edfe8;;
     text-align: center;
     padding: 20px;
     margin-top: 60px;
