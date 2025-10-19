@@ -164,3 +164,7 @@ footer {
     background: rgb(41, 150, 252);
     text-align: center;
 }
+
+h1 {
+    font-size: 35px;
+}
