@@ -165,7 +165,11 @@ button:hover {
 }
 
 textarea {
-    
+  background-color: #d2f7fc;
+  border-radius: 20px;
+  width: 1200px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 footer {
