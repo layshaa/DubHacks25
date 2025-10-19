@@ -85,81 +85,6 @@
     display: block;
 }
 
-/* ===== BUTTON LIST STYLING ===== */
-
-/*
-   Targets the button list specifically.
-   Removes bullets and background.
-*/
-#inputButtons ul {
-    list-style: none;
-    background-color: transparent;
-}
-
-/*
-   Makes button list items display horizontally.
-*/
-#inputButtons ul li {
-    display: inline-block;
-    margin: 0 5px; /* adds spacing between buttons */
-}
-
-/* ===== MAIN CONTENT STYLING ===== */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding-top: 50px;
-    padding-bottom: 40px;
-}
-
-#greeting img {
-    height: 250px;
-    width: 250px;
-}
-
-#greeting {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-#inputBox textarea {
-    min-width: 250px;
-    min-height: 300px;
-    resize: none;
-    padding: 10px;
-    font-size: 16px;
-    width: 650px;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgb(41, 150, 252);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(155, 207, 255);
-}
-
 footer {
     background: rgb(41, 150, 252);
     text-align: center;
@@ -167,6 +92,82 @@ footer {
     margin-top: 60px;
 }
 
-h1 {
-    font-size: 35px;
+html, body {
+  height: 100%;
+  width: auto;
+}
+
+body {
+  background-color: grey;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 20px;
+  padding-bottom: 60px;
+}
+
+h1,h2 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p, figcaption {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+}
+
+.MemberSec {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 1200px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.entry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.photoEntry {
+  text-align: center;
+  flex-shrink: 0;
+  width: 250px;
+}
+
+.bioEntry {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  width: 750px;
+  line-height: 1.6;
+}
+
+.bioEntry img {
+  display: none;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  object-fit: cover;
 }
