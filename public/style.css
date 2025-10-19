@@ -202,4 +202,8 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 60px;
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    color: #184a51;
 }
