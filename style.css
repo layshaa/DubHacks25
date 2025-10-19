@@ -13,6 +13,22 @@
    Targets the navigation ul specifically using the parent div id.
    Sets the background for the main navigation bar.
 */
+.logo {
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.logo:hover {
+  transform: scale(1.5); /* Enlarge to 120% */
+}
+
+.explaty {
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.explaty:hover {
+  transform: scale(1.2); /* Enlarge to 120% */
+}
+
 #LHS ul {
     list-style: none;
     background-color: #29838E;
