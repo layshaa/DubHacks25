@@ -1,0 +1,26 @@
+p {
+    color: blue;
+}
+
+nav {
+    background-color: #29838E;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+}
+
+select {
+    float: right;
+}
+
+body {
+    background-color: #EFF9FA;
+}
