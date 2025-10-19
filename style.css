@@ -113,6 +113,7 @@ main {
     justify-content: flex-start;
     min-height: 100vh;
     padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 #greeting img {
@@ -136,8 +137,8 @@ main {
 }
 
 #inputBox textarea {
-    min-width: 200px;
-    min-height: 450px;
+    min-width: 250px;
+    min-height: 300px;
     resize: none;
     padding: 10px;
     font-size: 16px;
@@ -157,4 +158,9 @@ button {
 
 button:hover {
     background-color: rgb(155, 207, 255);
+}
+
+footer {
+    background: rgb(41, 150, 252);
+    text-align: center;
 }
