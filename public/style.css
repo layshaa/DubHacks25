@@ -204,7 +204,10 @@ button {
 
 button:hover {
     background-color:  #349fad;
+    transform: scale(1.1); /* Enlarge to 120% */
 }
+
+
 
 textarea {
   background-color: #d2f7fc;

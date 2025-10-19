@@ -9,6 +9,26 @@
 
 /* ===== NAVIGATION MENU STYLING ===== */
 
+.logo{
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#left {
+  transform: scaleX(-1);
+  transition: transform 0.3s ease; /* Optional: adds smooth animation */
+}
+
+#left:hover {
+  transform: scaleX(-1) scale(1.5);
+}
+
+
+.logo:hover {
+   transform: scale(1.5); /* Enlarge to 120% */
+}
+
 /*
    Targets the navigation ul specifically using the parent div id.
    Sets the background for the main navigation bar.
