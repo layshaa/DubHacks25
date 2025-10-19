@@ -163,6 +163,8 @@ button:hover {
 footer {
     background: rgb(41, 150, 252);
     text-align: center;
+    padding: 20px;
+    margin-top: 60px;
 }
 
 h1 {

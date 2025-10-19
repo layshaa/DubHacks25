@@ -135,19 +135,19 @@ p, figcaption {
   width: 1200px;
   padding: 30px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  min-height: 400px;
 }
 
 .entry {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
 }
 
 .photoEntry {
   text-align: center;
   flex-shrink: 0;
+  width: 250px;
 }
 
 .bioEntry {
@@ -159,10 +159,15 @@ p, figcaption {
   line-height: 1.6;
 }
 
+.bioEntry img {
+  display: none;
+}
+
 img {
   height: 250px;
   width: 250px;
   border-radius: 20px;
   border: 5px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 10px;
+  object-fit: cover;
 }
