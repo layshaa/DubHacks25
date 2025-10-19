@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "wispy-rice-89d9",
+	"name": "dubhacks25",
 	"main": "main.js",
 	"compatibility_date": "2025-10-11",
 	"compatibility_flags": [

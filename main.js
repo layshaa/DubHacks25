@@ -47,7 +47,7 @@ export default {
           contents: prompt,
         });
 
-        return new Response(JSON.stringify({ result: response.text }), {
+        return new Response(JSON.stringify({ result: response.response.text() }), {
           headers: { "Content-Type": "application/json" },
         });
       } catch (error) {
