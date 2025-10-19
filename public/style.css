@@ -29,6 +29,23 @@ h1 {
   color: #184a51;
 }
 
+
+.logo {
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.logo:hover {
+  transform: scale(1.5); /* Enlarge to 120% */
+}
+
+.explaty {
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.explaty:hover {
+  transform: scale(1.2); /* Enlarge to 120% */
+}
+
 h2, button {
     font-family: "Cherry Bomb One", system-ui;
     font-weight: 400;
