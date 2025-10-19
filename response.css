@@ -20,3 +20,7 @@ ul li {
 select {
     float: right;
 }
+
+body {
+    background-color: #EFF9FA;
+}

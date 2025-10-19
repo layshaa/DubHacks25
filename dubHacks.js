@@ -1,4 +1,8 @@
+// grabs the desired language
+const dropdown = document.getElementById("myDropdown");
 
+const selectedLanguage = dropdown.value; // Grabs the attribute
+const selectedLanguageText = dropdown.options[dropdown.selectedIndex].text; // Grabs the actual text inside
 
 
 
