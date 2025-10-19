@@ -1,12 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 
-// Create Gemini AI client using Worker secret
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY, // set with `wrangler secret put GEMINI_API_KEY`
-});
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     if (request.method === "POST") {
       try {
         const { userText, selectedLanguage } = await request.json();
@@ -17,6 +13,12 @@ export default {
             headers: { "Content-Type": "application/json" },
           });
         }
+
+
+        // Create Gemini AI client using Worker secret
+        const ai = new GoogleGenAI({
+          apiKey: env.GEMINI_API_KEY, // set with `wrangler secret put GEMINI_API_KEY`
+        });
 
         const prompt = `
           You are an expert legal assistant and translator.
