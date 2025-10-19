@@ -16,6 +16,9 @@
 #LHS ul {
     list-style: none;
     background-color: #29838E;
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 600;
+    font-style: normal;
 }
 
 h1 {
@@ -23,7 +26,17 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: #1a535a;
+  color: #184a51;
+}
+
+h2, button {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: #184a51;
 }
 
 /*
@@ -153,9 +166,13 @@ body {
     min-height: 300px;
     resize: none;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
     width: 650px;
     border-radius: 5px;
+
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 button {
@@ -169,7 +186,7 @@ button {
 }
 
 button:hover {
-    background-color:  #9edfe8;
+    background-color:  #349fad;
 }
 
 textarea {
