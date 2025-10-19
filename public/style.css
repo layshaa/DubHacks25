@@ -18,6 +18,14 @@
     background-color: #29838E;
 }
 
+h1 {
+  font-family: "Rubik Puddles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  color: #1a535a;
+}
+
 /*
    Targets every <li> inside the navigation <ul>.
    display: inline-block -> puts list items next to each other horizontally.
@@ -177,8 +185,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 60px;
-}
-
-h1 {
-    font-size: 35px;
 }
